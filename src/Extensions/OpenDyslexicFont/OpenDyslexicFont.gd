@@ -6,10 +6,17 @@ var previous_font: Font
 
 
 func _enter_tree() -> void:
-	theme = ExtensionsApi.theme.get_theme()
-	previous_font = theme.default_font
-	theme.default_font = OPEN_DYSLEXIC_3_REGULAR
+	if ExtensionsApi.get_api_version() < 5:
+		theme = ExtensionsApi.theme.get_theme()
+		previous_font = theme.default_font
+		theme.default_font = OPEN_DYSLEXIC_3_REGULAR
+	else:
+		ExtensionsApi.theme.add_font(OPEN_DYSLEXIC_3_REGULAR)
+		ExtensionsApi.theme.set_font(OPEN_DYSLEXIC_3_REGULAR)
 
 
 func _exit_tree() -> void:
-	theme.default_font = previous_font
+	if ExtensionsApi.get_api_version() < 5:
+		theme.default_font = previous_font
+	else:
+		ExtensionsApi.theme.remove_font(OPEN_DYSLEXIC_3_REGULAR)

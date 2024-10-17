@@ -3,8 +3,8 @@
 	"display_name": "OpenDyslexic Font",
 	"description": "A Pixelorama extension that sets the OpenDyslexic font as the main font of the user interface.",
 	"author": "Orama Interactive",
-	"supported_api_versions": [ 4 ],
-	"version": "1.0",
+	"supported_api_versions": [ 4, 5 ],
+	"version": "1.1",
 	"license": "MIT",
 	"nodes": [
 		"OpenDyslexicFont.tscn"
