@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://jsvmnoss0cff"]
 
-[ext_resource type="Script" path="res://src/Extensions/OpenDyslexicFont/OpenDyslexicFont.gd" id="1_h6mtp"]
+[ext_resource type="Script" uid="uid://uhqw7h3lj42w" path="res://src/Extensions/OpenDyslexicFont/OpenDyslexicFont.gd" id="1_h6mtp"]
 
 [node name="OpenDyslexicFont" type="Node"]
 script = ExtResource("1_h6mtp")

@@ -13,8 +13,9 @@ config_version=5
 config/name="OpenDyslexic Font for Pixelorama"
 config/description="A Pixelorama extension that sets the OpenDyslexic font as the main font of the user interface."
 run/main_scene="res://src/Extensions/OpenDyslexicFont/OpenDyslexicFont.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+config/tags=PackedStringArray("pixelorama_extension")
 
 [autoload]
 
